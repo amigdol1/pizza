@@ -1,5 +1,5 @@
 function Pizza(toppings, size) {
-  this.toppings = [],
+  this.toppings = toppings,
   this.size = size
 }
 
@@ -16,19 +16,11 @@ $(document).ready(function() {
     }).toArray()
     var inputSize = $("input:radio[name=size]:checked").val();
 
-    console.log(inputToppings)
-    console.log(inputSize)
-
     var newPizza = new Pizza(inputToppings, inputSize);
     newPizza.cost();
 
+    console.log(newPizza.toppings)
+    console.log(newPizza.size)
     console.log(newPizza.cost())
   });
 });
-
-
-
-//will call on pizza.toppings to print out
-//will call on pizza.size to print out
-//will call on cost() to print out
-//push the checkbox values to the array. push the size to the empty string
