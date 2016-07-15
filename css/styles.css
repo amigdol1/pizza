@@ -15,3 +15,11 @@ button {
   text: white;
   background-color: #9F8A77;
 }
+
+#name {
+  width: 25%;
+}
+
+#phone {
+  width: 25%;
+}

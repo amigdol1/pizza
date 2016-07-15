@@ -20,6 +20,14 @@
       <br></br>
       <form id="pizza">
         <div class="form-group">
+          <label for="name">Please enter your preferred name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="name">Best phone number to reach you:</label>
+          <input id="phone" class="form-control" type="text">
+        </div>
+        <div class="form-group">
         <label for="toppings">Step 1: Please select the fancy toppings you would like:</label>
           <div class="checkbox">
             <label>
@@ -74,25 +82,25 @@
           <div class="radio">
             <label>
               <input type="radio" name="size" value=1>
-              Tall
+              Tall (12")
             </label>
           </div>
 
           <div class="radio">
             <label>
               <input type="radio" name="size" value=2>
-              Grande
+              Grande (16")
             </label>
           </div>
 
           <div class="radio">
             <label>
               <input type="radio" name="size" value=3>
-              Viente
+              Viente (20")
             </label>
           </div>
         </div>
-        <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Pinkies up!</button>
+        <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Place Order</button>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -100,7 +108,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">Your order has been submitted!</h4>
+                <h4 class="modal-title" id="myModalLabel">Pinkies up! Your order has been submitted.</h4>
               </div>
               <div class="modal-body"><div id="result">$</div>
               </div>

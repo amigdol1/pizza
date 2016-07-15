@@ -1,5 +1,5 @@
 # Order Pizza: A Website to Place a Pizza Order and View the Relevant Cost
-## Object Orientation: Introduction to Programming (Evening Course) 7.16.2016
+## Object-oriented Javascript: Introduction to Programming (Evening Course) 7.16.2016
 
 ## Description
 This webpage returns a specific output based on what the user inputs into a form through looping, arrays, and branching (conditional logic).

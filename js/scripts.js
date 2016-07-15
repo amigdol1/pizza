@@ -11,6 +11,9 @@ $(document).ready(function() {
   var pizzaInput = new Pizza();
   $("form#pizza").submit(function(event) {
     event.preventDefault();
+
+    var name = $("#name").val();
+    var phone = $("#phone").val();
     var inputToppings = $("input:checkbox:checked").map(function(){
       return $(this).val();
     }).toArray()
@@ -19,6 +22,6 @@ $(document).ready(function() {
     var newPizza = new Pizza(inputToppings, inputSize);
     newPizza.cost();
 
-    $("#result").text("You ordered a fancy pizza with the following items: " + newPizza.toppings.join(", ") + ". This will be ready in 2 to 4 hours and will cost: $" + newPizza.cost());
+    $("#result").text("Thank you, " + name + ". You ordered a fancy pizza with the following item(s): " + newPizza.toppings.join(", ") + ". This will be ready in 2 to 4 hours and will cost: $" + newPizza.cost());
   });
 });
