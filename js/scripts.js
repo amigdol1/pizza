@@ -19,10 +19,6 @@ $(document).ready(function() {
     var newPizza = new Pizza(inputToppings, inputSize);
     newPizza.cost();
 
-    console.log(newPizza.toppings)
-    console.log(newPizza.size)
-    console.log(newPizza.cost())
-
-    $("#result").text(newPizza.cost())
+    $("#result").text("You ordered a fancy pizza with the following items: " + newPizza.toppings.join(", ") + ". This will be ready in 2 to 4 hours and will cost: $" + newPizza.cost());
   });
 });
