@@ -4,7 +4,7 @@ function Pizza(toppings, size) {
 }
 
 Pizza.prototype.cost = function(){
-  return this.size * 5
+  return this.size * 9
 }
 
 $(document).ready(function() {
