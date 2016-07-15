@@ -2,6 +2,7 @@ function Pizza(toppings, size) {
   this.toppings = toppings,
   this.size = size
 }
+//add name and phone to constructor?
 
 Pizza.prototype.cost = function(){
   return this.size * 9

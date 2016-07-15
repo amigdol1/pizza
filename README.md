@@ -5,12 +5,15 @@
 This webpage returns a specific output based on what the user inputs into a form through looping, arrays, and branching (conditional logic).
 
 ## Specifications
-1. Req 1
-  Input Example:
-  Output Example:
-2. Req 2
-  Input Example:
-  Output Example:
+1. Cost/price of pizza contingent on size
+  * Input Example: Small
+  * Output Example: $9
+2. List of topping options available for the user to choose
+   * Input Example: Mozzarella
+   * Output Example: [Mozzarella]
+3. Sizes available to choose from
+  * Input Example: Small
+  * Output Example: 1
 
 ## Setup
 1. Clone the repository down to your local machine form terminal.
