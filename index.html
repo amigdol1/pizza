@@ -56,13 +56,6 @@
 
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="shrimp">
-              Shrimp
-            </label>
-          </div>
-
-          <div class="checkbox">
-            <label>
               <input type="checkbox" value="tomato">
               Tomato
             </label>
@@ -97,12 +90,27 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-md">
-        Pinkies up</button>
+        <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Pinkies up!</button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Your order has been submitted</h4>
+              </div>
+              <div class="modal-body">Your fancy pizza will be ready in 2 to 4 hours! This will cost:<div id="result">$</div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Perfect - I wasn't hungry anyways. Just feeling fancy.</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end -->
         <br></br>
       </form>
-      <div id="result">
-      </div>
+
     </div>
   </body>
 </html>
