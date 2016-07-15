@@ -22,5 +22,7 @@ $(document).ready(function() {
     console.log(newPizza.toppings)
     console.log(newPizza.size)
     console.log(newPizza.cost())
+
+    $("#result").text(newPizza.cost())
   });
 });

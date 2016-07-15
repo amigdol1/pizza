@@ -3,28 +3,33 @@
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Order</title>
+    <title>Fancy Pizzas</title>
   </head>
   <body>
     <div class = "container">
-      <h1>Order your pizza now!</h1>
+      <h1>Order your fancy pizza now!</h1>
+      <br></br>
+      <img src="css/pizza.jpg">
+      <img src="css/pizza1.jpg">
+      <img src="css/pizza2.jpg">
       <br></br>
       <form id="pizza">
         <div class="form-group">
-        <label for="toppings">Step 1: Please select the toppings you would like:</label>
+        <label for="toppings">Step 1: Please select the fancy toppings you would like:</label>
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="cheese">
-              Cheese
+              <input type="checkbox" value="mozarella">
+              Mozarella
             </label>
           </div>
 
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="pepperoni">
-              Pepperoni
+              <input type="checkbox" value="prosciutto">
+              Prosciutto
             </label>
           </div>
 
@@ -41,7 +46,7 @@
               Bell Peppers
             </label>
           </div>
-          
+
             <div class="checkbox">
               <label>
                 <input type="checkbox" value="pineapple">
@@ -51,36 +56,53 @@
 
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="canadian_bacon">
-              Canadian Bacon
+              <input type="checkbox" value="shrimp">
+              Shrimp
             </label>
           </div>
-          <br></br>
 
-        <label for="size">Step 2: Please select what size you would like:</label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="tomato">
+              Tomato
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="basil">
+              Basil
+            </label>
+          </div>
+
+        <label for="size">Step 2: What size tickles your fancy?</label>
           <div class="radio">
             <label>
               <input type="radio" name="size" value=1>
-              Small
+              Tall
             </label>
           </div>
 
           <div class="radio">
             <label>
               <input type="radio" name="size" value=2>
-              Medium
+              Grande
             </label>
           </div>
 
           <div class="radio">
             <label>
               <input type="radio" name="size" value=3>
-              Large
+              Viente
             </label>
           </div>
         </div>
-        <button>Submit</button>
+        <button type="submit" class="btn btn-primary btn-md">
+        Pinkies up</button>
+        <br></br>
       </form>
+      <div id="result">
+      </div>
     </div>
   </body>
 </html>
