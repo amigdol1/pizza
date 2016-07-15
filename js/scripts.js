@@ -1,16 +1,34 @@
-function pizza(toppings, size) {
+function Pizza(toppings, size) {
   this.toppings = [],
   this.size = size
 }
 
+Pizza.prototype.cost = function(){
+  return this.size * 5
+}
+
 $(document).ready(function() {
+  var pizzaInput = new Pizza();
   $("form#pizza").submit(function(event) {
     event.preventDefault();
-    var toppings = $("input:checkbox:checked").map(function(){
-        return $(this).val();
+    var inputToppings = $("input:checkbox:checked").map(function(){
+      return $(this).val();
     }).toArray()
-    var size = $("input:radio[name=size]:checked").val();
-    console.log(size)
-    console.log(toppings)
+    var inputSize = $("input:radio[name=size]:checked").val();
+
+    console.log(inputToppings)
+    console.log(inputSize)
+
+    var newPizza = new Pizza(inputToppings, inputSize);
+    newPizza.cost();
+
+    console.log(newPizza.cost())
   });
 });
+
+
+
+//will call on pizza.toppings to print out
+//will call on pizza.size to print out
+//will call on cost() to print out
+//push the checkbox values to the array. push the size to the empty string
