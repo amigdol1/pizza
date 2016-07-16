@@ -1,8 +1,9 @@
-function Pizza(toppings, size) {
+function Pizza(name, phone, toppings, size) {
+  this.name = name,
+  this.phone = phone,
   this.toppings = toppings,
   this.size = size
 }
-//add name and phone to constructor?
 
 Pizza.prototype.cost = function(){
   return this.size * 9
@@ -18,7 +19,7 @@ $(document).ready(function() {
       return $(this).val();
       }).toArray()
     var inputSize = $("input:radio[name=size]:checked").val();
-    var newPizza = new Pizza(inputToppings, inputSize);
+    var newPizza = new Pizza(inputName, inputPhone, inputToppings, inputSize);
 
     $("#result").text("Thank you, " + inputName + ". You ordered a fancy pizza with the following item(s): " + newPizza.toppings.join(", ") + ". This will be ready in 2 to 4 hours and will cost: $" + newPizza.cost());
   });
