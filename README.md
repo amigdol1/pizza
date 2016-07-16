@@ -5,15 +5,15 @@
 This webpage returns a specific output based on what the user inputs into a form through looping, arrays, and branching (conditional logic).
 
 ## Specifications
-1. Cost/price of pizza contingent on size
-  * Input Example: Small
+1. List of topping options available for the user to choose
+   * Input Example: checkbox "Mozzarella", checkbox "Prosciutto"
+   * Output Example: mozzarella, prosciutto
+2. Have pizza sizes available to for customer to choose from
+   * Input Example: Tall (12")
+   * Output Example: 1
+3. Calculate the cost/price of pizza based on either of the toppings or size variables
+  * Input Example: Tall (12")
   * Output Example: $9
-2. List of topping options available for the user to choose
-   * Input Example: Mozzarella
-   * Output Example: [Mozzarella]
-3. Sizes available to choose from
-  * Input Example: Small
-  * Output Example: 1
 
 ## Setup
 1. Clone the repository down to your local machine form terminal.

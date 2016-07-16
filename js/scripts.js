@@ -21,6 +21,6 @@ $(document).ready(function() {
     var inputSize = $("input:radio[name=size]:checked").val();
     var newPizza = new Pizza(inputName, inputPhone, inputToppings, inputSize);
 
-    $("#result").text("Thank you, " + inputName + ". You ordered a fancy pizza with the following item(s): " + newPizza.toppings.join(", ") + ". This will be ready in 2 to 4 hours and will cost: $" + newPizza.cost());
+    $("#result").text("Thank you, " + inputName + ". You ordered a " + inputSize + "fancy pizza with the following item(s): " + newPizza.toppings.join(", ") + ". This will be ready in 2 to 4 hours and will cost: $" + newPizza.cost());
   });
 });
